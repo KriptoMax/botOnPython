@@ -6,19 +6,19 @@ bot = telebot.TeleBot("1933383897:AAE0GA6hT1wOuIx26xa14dFIhYDHOIMwc2Y")
 
 def handle_text(message):
 
-    if message.text.lower() == "Какие игры ты посоветуешь мне поиграть?":
+    if message.text == "Какие игры ты посоветуешь мне поиграть?":
 
         bot.send_message(message.chat.id,"Какой жанр игр тебе нравится?")
 
-    elif message.text.lower() == "Шутер":
+    elif message.text == "Шутер":
 
         bot.send_message(message.chat.id,"Самые популярные игры жанра: Far Cry 3 , GTA 5 , CALL OF DUTY, HALF-LIFE 2 , STALKER 2")
 
-    elif message.text.lower() == "Стратегия":
+    elif message.text == "Стратегия":
 
         bot.send_message(message.chat.id,"Самые популярные игры жанра: Frostpunk 2 , Total War: WARHAMMER 3 , Alien Marauder, Age of Empires 4")
 
-    elif message.text.lower() == "Боевик":
+    elif message.text == "Боевик":
 
         bot.send_message(message.chat.id,"Самые популярные игры жанра: BLOOD HUNT, Aircraft Carrier Survival, Lego Star War: The Skywalker Saga , Weird West, GhostWire:Tokyo, Tiny Tina's Wonderlands")
     else:
